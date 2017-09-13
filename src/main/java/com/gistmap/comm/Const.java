@@ -1,5 +1,12 @@
 package com.gistmap.comm;
 
+
+/**
+ * @Desc : 常量类
+ * @User : gistmap
+ * @Date : 2017/9/4  20:16
+ */
+
 public class Const {
 
     public static String LOGIN_SESSION_KEY = "enjoy_user";

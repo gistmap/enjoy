@@ -1,5 +1,11 @@
 package com.gistmap.comm;
 
+/**
+ * @Desc : 返回响应工具类
+ * @User : gistmap
+ * @Date : 2017/9/4  15:23
+ */
+
 public class Response {
 	/** 返回信息码*/
 	private String rspCode="000000";

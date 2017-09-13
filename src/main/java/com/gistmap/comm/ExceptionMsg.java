@@ -1,6 +1,10 @@
 
 package com.gistmap.comm;
-
+/**
+ * @Desc : 异常枚举
+ * @User : gistmap
+ * @Date : 2017/9/4  15:16
+ */
 public enum ExceptionMsg {
 	SUCCESS("000000", "操作成功"),
 	FAILED("999999","操作失败"),

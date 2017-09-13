@@ -1,5 +1,12 @@
 package com.gistmap.comm;
 
+/**
+ * @Desc : 返回响应类
+ * @User : gistmap
+ * @Date : 2017/9/4  15:30
+ */
+
+
 public class ResponseData extends Response{
     private Object data;
 
