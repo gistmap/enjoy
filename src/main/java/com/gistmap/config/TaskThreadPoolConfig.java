@@ -4,9 +4,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 异步任务线程池配置
- * 
- * @author yinjihuan
+ * @Desc : 异步任务线程池配置
+ * @User : gistmap
+ * @Date : 2017/9/11  22:16
  */
 @Configuration
 @ConfigurationProperties(prefix = "spring.task.pool")

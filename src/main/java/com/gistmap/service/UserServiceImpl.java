@@ -5,6 +5,12 @@ import com.gistmap.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @Desc : 用户Service接口实现
+ * @User : gistmap
+ * @Date : 2017/9/6  22:25
+ */
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -24,5 +30,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public void save(User user) {
         userMapper.save(user);
+    }
+
+    @Override
+    public User findByEmailOrName(String username, String email) {
+        return null;
     }
 }

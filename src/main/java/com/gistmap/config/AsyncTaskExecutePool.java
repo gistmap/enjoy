@@ -7,11 +7,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.AsyncConfigurer;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-
 import java.lang.reflect.Method;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
 
+/**
+ * @Desc : 异步任务线程池
+ * @User : gistmap
+ * @Date : 2017/9/11  22:16
+ */
 @Configuration
 public class AsyncTaskExecutePool implements AsyncConfigurer {
 	private Logger logger = LoggerFactory.getLogger(AsyncTaskExecutePool.class);

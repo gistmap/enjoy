@@ -7,6 +7,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import com.gistmap.filter.AuthorizeFilter;
 
+
+/**
+ * @Desc : 异步任务线程池配置
+ * @User : gistmap
+ * @Date : 2017/9/14  20:16
+ */
 @Configuration
 public class FilterConfig {
 	

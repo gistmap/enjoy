@@ -13,6 +13,12 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+/**
+ * @Desc : 其他Controller需继承此Controller
+ * @User : gistmap
+ * @Date : 2017/9/6  22:25
+ */
+
 @Controller
 public class BaseController {
 

@@ -4,6 +4,11 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+/**
+ * @Desc : 用户类
+ * @User : gistmap
+ * @Date : 2017/9/6  22:18
+ */
 public class User extends Entity implements Serializable
 {
     private static final long serialVersionUID = 6944948506315766997L;

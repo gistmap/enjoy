@@ -18,8 +18,14 @@ import javax.servlet.http.Cookie;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-@Controller
 
+/**
+ * @Desc : User Controller
+ * @User : gistmap
+ * @Date : 2017/9/6  22:25
+ */
+
+@Controller
 public class UserController extends BaseController{
 
     @Autowired
