@@ -1,4 +1,4 @@
-package com.gistmap.config;
+package com.gistmap.annotation;
 
 import java.lang.annotation.*;
 

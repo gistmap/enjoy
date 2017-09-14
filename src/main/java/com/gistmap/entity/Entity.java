@@ -1,5 +1,6 @@
 package com.gistmap.entity;
 
+import com.gistmap.annotation.TableName;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.io.Serializable;
@@ -9,6 +10,7 @@ import java.io.Serializable;
  * @User : gistmap
  * @Date : 2017/9/6  22:15
  */
+
 
 public class Entity implements Serializable {
 

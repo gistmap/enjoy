@@ -1,5 +1,6 @@
 package com.gistmap.config;
 
+import com.gistmap.annotation.LoggerManage;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
