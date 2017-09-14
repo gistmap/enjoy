@@ -6,7 +6,7 @@
         SELECT * FROM user WHERE id = 1
     </select>
 
-    <select id="findByEmail" resultType="User">
+    <select id="getByEmail" resultType="User">
         SELECT
           *
         FROM
@@ -15,7 +15,7 @@
           email = ${email}
     </select>
 
-    <select id="findByUserName" resultType="User">
+    <select id="getByUserName" resultType="User">
         SELECT
           *
         FROM
@@ -33,7 +33,7 @@
         username = ${username}
     </insert>
 
-    <select id="findByEmailOrName">
+    <select id="getByEmailOrName">
          SELECT
           *
         FROM

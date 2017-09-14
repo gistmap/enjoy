@@ -15,11 +15,11 @@ public interface UserDao {
 
     User get();
 
-    User findByEmail(String email);
+    User getByEmail(String email);
 
     void save(User user);
 
-    User findByUserName(String username);
+    User getByUserName(String username);
 
-    User findByEmailOrName(String email, String username);
+    User getByEmailOrName(String email, String username);
 }

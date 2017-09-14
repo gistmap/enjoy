@@ -15,14 +15,14 @@ public interface UserService {
      * @param email
      * @return
      */
-    User findByEmail(String email);
+    User getByEmail(String email);
 
     /**
      * 根据用户名查询User对象
      * @param username
      * @return
      */
-    User findByUserName(String username);
+    User getByUserName(String username);
 
     /**
      * 保存用户
@@ -36,7 +36,7 @@ public interface UserService {
      * @param email
      * @return
      */
-    User findByEmailOrName(String username, String email);
+    User getByEmailOrName(String username, String email);
 
 
 

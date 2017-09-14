@@ -18,13 +18,13 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public User findByEmail(String email) {
-        return userDao.findByEmail(email);
+    public User getByEmail(String email) {
+        return userDao.getByEmail(email);
     }
 
     @Override
-    public User findByUserName(String username) {
-        return userDao.findByUserName(username);
+    public User getByUserName(String username) {
+        return userDao.getByUserName(username);
     }
 
     @Override
@@ -33,8 +33,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByEmailOrName(String username, String email) {
-        return userDao.findByEmailOrName(email, username);
+    public User getByEmailOrName(String username, String email) {
+        return userDao.getByEmailOrName(email, username);
     }
 
 }
