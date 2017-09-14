@@ -1,4 +1,4 @@
-package com.gistmap.mapper;
+package com.gistmap.dao;
 
 import com.gistmap.entity.User;
 import org.apache.ibatis.annotations.Mapper;
@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
  */
 
 @Mapper
-public interface UserMapper {
+public interface UserDao {
 
     User get();
 
