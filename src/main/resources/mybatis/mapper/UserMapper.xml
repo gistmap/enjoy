@@ -32,4 +32,15 @@
         WHERE
         username = ${username}
     </insert>
+
+    <select id="findByEmailOrName">
+         SELECT
+          *
+        FROM
+          user
+        WHERE
+          email = ${email}
+        OR
+          username = ${username}
+    </select>
 </mapper>
