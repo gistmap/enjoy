@@ -28,11 +28,11 @@ public class UserController extends BaseController{
 
     @PostMapping("/regist/Email")
     public Response signUp(User user){
-        User registUser = userService.findByEmail(user.getEmail());
+        User registUser = userService.getByEmail(user.getEmail());
         if (null != registUser) {
             return result(ExceptionMsg.EmailUsed);
         }
-        User nameUser = userService.findByUserName(user.getUsername());
+        User nameUser = userService.getByUserName(user.getUsername());
         if (null != nameUser) {
             return result(ExceptionMsg.UserNameUsed);
         }
@@ -46,7 +46,7 @@ public class UserController extends BaseController{
     @PostMapping("/login")
     public Response signIn(User user) {
 
-        User loginUser = userService.findByEmailOrName(user.getUsername(),user.getEmail());
+        User loginUser = userService.getByEmailOrName(user.getUsername(),user.getEmail());
 
         if (loginUser == null) {
             return result(ExceptionMsg.LoginNameNotExists);
