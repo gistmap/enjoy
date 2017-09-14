@@ -4,19 +4,14 @@ import com.gistmap.comm.Const;
 import com.gistmap.comm.ExceptionMsg;
 import com.gistmap.comm.Response;
 import com.gistmap.comm.ResponseData;
-import com.gistmap.mapper.UserMapper;
 import com.gistmap.entity.User;
 import com.gistmap.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.Cookie;
 import java.time.LocalDateTime;
-import java.util.Map;
 
 
 /**
