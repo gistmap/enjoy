@@ -1,5 +1,7 @@
 # enjoy
-##规范
+
+##规范 
+
 * 驼峰命名转换:Table{create_time} -> Entity{createTime}
 * 获取单个对象的方法用 get 做前缀
 * 获取多个对象的方法用 list 做前缀
