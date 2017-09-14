@@ -18,7 +18,7 @@ public class User extends Entity implements Serializable
     private static final long serialVersionUID = 6944948506315766997L;
 
     @Field(value="id", desc="ID")
-    private Long id;
+    private Long id ;
 
     @Field(value="name", desc="用户名")
     private String name;
