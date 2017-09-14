@@ -12,6 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface UserMapper {
+
     User get();
 
     User findByEmail(String email);
@@ -19,4 +20,6 @@ public interface UserMapper {
     void save(User user);
 
     User findByUserName(String username);
+
+    User findByEmailOrName(String email, String username);
 }
