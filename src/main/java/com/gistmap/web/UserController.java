@@ -9,6 +9,7 @@ import com.gistmap.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.Cookie;
 import java.time.LocalDateTime;
@@ -26,8 +27,8 @@ public class UserController extends BaseController{
     @Autowired
     private UserService userService;
 
-    @PostMapping("/regist/Email")
-    public Response signUp(User user){
+    @PostMapping("/regist/email")
+    public Response signUp(@RequestBody User user){
         User registUser = userService.getByEmail(user.getEmail());
         if (null != registUser) {
             return result(ExceptionMsg.EmailUsed);

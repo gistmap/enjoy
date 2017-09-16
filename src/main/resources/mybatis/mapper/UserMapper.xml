@@ -12,7 +12,7 @@
         FROM
           user
         WHERE
-          email = ${email}
+          email = #{email}
     </select>
 
     <select id="getByUserName" resultType="User">
@@ -21,26 +21,25 @@
         FROM
         user
         WHERE
-        username = ${username}
+        username = #{username}
     </select>
 
-    <insert id="save" >
-        SELECT
-        *
-        FROM
-        user
-        WHERE
-        username = ${username}
+    <insert id="save" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO
+          t_user
+            (username, password, create_time, modify_time)
+        VALUES
+            (#{username}, #{password}, #{createTime}, #{modifyTime})
     </insert>
 
     <select id="getByEmailOrName">
-         SELECT
+        SELECT
           *
         FROM
           user
         WHERE
-          email = ${email}
+          email = #{email}
         OR
-          username = ${username}
+          username = #{username}
     </select>
 </mapper>
