@@ -1,0 +1,109 @@
+.blog-inner {
+    background: white;
+    -webkit-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    -ms-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    -o-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    margin-bottom: 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.blog-inner .desc {
+    padding: 20px;
+}
+.blog-inner .desc h3 {
+    line-height: 28px;
+}
+.blog-inner .desc h4 a {
+    color: rgba(0, 0, 0, 0.8);
+}
+.blog-inner .desc h3 a:hover, .blog-inner .desc h3 a:focus {
+    text-decoration: none;
+}
+.blog-inner:hover {
+    -webkit-box-shadow: 0px 9px 43px -10px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 9px 43px -10px rgba(0, 0, 0, 0.17);
+    -ms-box-shadow: 0px 9px 43px -10px rgba(0, 0, 0, 0.17);
+    -o-box-shadow: 0px 9px 43px -10px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 9px 43px -10px rgba(0, 0, 0, 0.17);
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #7f7f7f;
+    background: #fff;
+    height: 100%;
+    position: relative;
+}
+/*
+a {
+    color: #1FB57B;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+    color: #1FB57B;
+    outline: none;
+}
+
+p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Playfair Display", Arial, serif;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}*/
+
+
+.user_atten {
+    display: block;
+    height: 45px;
+    overflow: hidden;
+    margin: 10px 0 0 0px;
+}
+.user_atten li {
+    float: left;
+    width: 80px;
+    text-align: center;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+.user_atten li:last-child {
+    border-right-width: 0;
+}
+.S_txt2 {
+    display: block;
+    font-size: 12px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+}

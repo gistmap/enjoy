@@ -20,4 +20,9 @@ public class IndexController {
 	public String regist() {
 		return "regist";
 	}
+
+	@GetMapping("/main")
+	public String main() {
+		return "main";
+	}
 }

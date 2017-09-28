@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="select2/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="select2/css/select2-bootstrap.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+<div class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Enjoy<span>.</span></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://builtwithbootstrap.com/" target="_blank">写故事</a></li>
+                <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+
+
+    <div class="row">
+        <div class="form-group">
+            <label for="a">标题</label>
+            <input type="text" class="form-control" id="a" placeholder="请输入标题">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <label for="b">歌名</label>
+            <select class="js-example-basic-single" id="b" name="name" multiple="multiple">
+            </select>
+        </div>
+    </div>
+
+    <div class="row">x
+
+    </div>
+    <div class="row">
+        <div id="editor">
+            <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+        </div>
+    </div>
+    <button id="sign" type="submit">获取html</button>
+
+</div>
+<!-- jQuery -->
+<script src="jquery/jquery.min.js"></script>
+<script src="select2/js/select2.min.js"></script>
+<script src="select2/js/i18n/zh-CN.js"></script>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="wangEditor/wangEditor.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var data;
+        $('.js-example-basic-single').select2({
+
+            ajax: {
+                type:'GET',
+                url: "/getName",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term 请求参数 ， 请求框中输入的参数
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data
+                    };
+                },
+                cache: true
+            },
+            language:"zh-CN",
+            theme: "bootstrap",
+            width:"100%",//设置下拉框的宽度
+            placeholder:'请选择',
+            allowClear:true,
+            tags:true,
+            minimumInputLength:1,//最小需要输入多少个字符才进行查询
+            maximumSelectionLength:1,
+
+        });
+
+        var E = window.wangEditor;
+        var editor = new E('#editor');
+        editor.customConfig.zIndex = 1;
+        editor.create();
+
+        $('#sign').click(function () {
+            var res= $("#b").select2("data")[0];
+            console.log(res);
+            console.log(res.id);
+            console.log(res.text);
+            if (res.id == res.text) {
+                //new
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
