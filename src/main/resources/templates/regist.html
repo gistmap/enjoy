@@ -2,44 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>注册</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
 
     <div class="container">
         <div class="row">
-            <form id="form" method="post" onsubmit="signUp()" data-parsley-validate >
+            <form id="form" data-parsley-validate >
                 <div class="col-md-3 col-md-offset-8">
                     <div class="">
                         <label for="email"> 邮箱 </label>
-                        <input type="email" class="form-control" id="email" data-parsley-required="true"/>
+                        <input type="email" class="form-control" id="email" name="email" data-parsley-required="true"/>
                     </div>
                     <div class="form-group">
                         <label for="username">账号</label>
-                        <input type="text" class="form-control" id="username" data-parsley-required="true" data-parsley-minlength="4">
+                        <input type="text" class="form-control" id="username" name="username" data-parsley-required="true" data-parsley-minlength="4">
                     </div>
                     <div class="form-group">
                         <label for="password"> 密码 </label>
-                        <input type="password" class="form-control" id="password" data-parsley-required="true" data-parsley-minlength="8"/>
+                        <input type="password" class="form-control" id="password" name="password" data-parsley-required="true" data-parsley-minlength="8"/>
                     </div>
 
-                    <button type="submit" class="btn btn-primary" onclick="signUp()">提交</button>
+                    <button type="button" class="btn btn-primary"  onclick="signUp()">提交</button>
                 </div>
             </form>
 
         </div>
     </div>
 
-    <script src="jquery/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="layer/layer.js"></script>
-    <script src="layer/laypage/laypage.js"></script>
-    <script src="parsley/parsley.min.js"></script>
-    <script src="parsley/zh_cn.js"></script>
-    <script>
+<script src="jquery/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="layer/layer.js"></script>
+<script src="layer/laypage/laypage.js"></script>
+<script src="parsley/parsley.min.js"></script>
+<script src="parsley/zh_cn.js"></script>
+<script>
+    var base = "${basePath}";
     function signUp() {
-
         var ok = $('#form').parsley().isValid({force: true});
         alert(ok);
         if (!ok) {
@@ -53,26 +53,23 @@
             "username":username,
             "password":passwd
         };
-        console.log(d);
         $.ajax({
             type: "post",
-            url: "/regist/email",
+            url: "/signUp",
             data: JSON.stringify(d),
             dataType: "json",
             contentType: "application/json",
             success: function (data ){
                 if (data.rspCode == "000000") {
                     layer.msg(data.rspMsg);
+                    location.href="/main";
                 } else {
                     layer.msg(data.rspMsg);
                 }
             }
         });
-
-
-
     }
 
-    </script>
+</script>
 </body>
 </html>

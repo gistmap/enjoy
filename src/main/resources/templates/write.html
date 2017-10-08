@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<#include "header.html">
+<div class="container">
+
+    <div class="row">
+        <div class="form-group">
+            <label for="title">标题</label>
+            <input type="text" class="form-control" id="title" placeholder="请输入标题">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <label for="b">歌名</label>
+            <select class="js-example-basic-single" id="b" name="name" multiple="multiple">
+            </select>
+        </div>
+    </div>
+
+    <div class="row">x
+
+    </div>
+    <div class="row">
+        <div id="editor">
+            <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+        </div>
+    </div>
+    <button id="sign" type="submit">获取html</button>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var data;
+        $('.js-example-basic-single').select2({
+
+            ajax: {
+                type:'GET',
+                url: "/getName",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term 请求参数 ， 请求框中输入的参数
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data
+                    };
+                },
+                cache: true
+            },
+            language:"zh-CN",
+            theme: "bootstrap",
+            width:"100%",//设置下拉框的宽度
+            placeholder:'请选择',
+            allowClear:true,
+            tags:true,
+            minimumInputLength:1,//最小需要输入多少个字符才进行查询
+            maximumSelectionLength:1,
+
+        });
+
+        var E = window.wangEditor;
+        var editor = new E('#editor');
+        editor.customConfig.zIndex = 1;
+        editor.create();
+
+        $('#sign').click(function () {
+            var res= $("#b").select2("data")[0];
+            var title = $('#title').val();
+            console.log(res);
+            console.log(res.id);
+            console.log(res.text);
+            if (res.id == res.text) {
+                //new
+            }
+            var d = {
+                "title":title,
+                "tagId":res.id,
+                "content":editor.txt.html()
+            };
+            $.ajax({
+                type: "post",
+                url: "/story/add",
+                data: JSON.stringify(d),
+                dataType: "json",
+                contentType: "application/json",
+                success: function (data){
+                    if (data.rspCode == "000000") {
+                        layer.msg(data.rspMsg);
+                    } else {
+                        layer.msg(data.rspMsg);
+                    }
+                }
+            });
+        });
+    });
+
+</script>
+</body>
+</html>

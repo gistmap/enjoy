@@ -18,7 +18,7 @@ public class Story extends Entity implements Serializable {
 	@Field(value="uid", desc="用户ID")
 	private Long uid;
 	@Field(value="title", desc="标题")
-	private Long title;
+	private String title;
 	@Field(value ="tag_id", desc = "音乐标签ID")
 	private Long tagId;
 	@Field(value = "content", desc = "内容")
@@ -48,11 +48,11 @@ public class Story extends Entity implements Serializable {
 		this.uid = uid;
 	}
 
-	public Long getTitle() {
+	public String getTitle() {
 		return title;
 	}
 
-	public void setTitle(Long title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
