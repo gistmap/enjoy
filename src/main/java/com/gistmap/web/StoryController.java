@@ -18,6 +18,9 @@ public class StoryController extends BaseController {
 	@PostMapping("/story/add")
 	@ResponseBody
 	public Response save(@RequestBody Story story){
+		if (story.getTagId() == null) {
+			//save music tag
+		}
 		Long uid = getUserId();
 		story.setUid(uid);
 		return null;

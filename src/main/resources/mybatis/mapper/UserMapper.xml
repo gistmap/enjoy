@@ -29,7 +29,7 @@
           user
             (username, password, create_time, modify_time)
         VALUES
-            (#{username}, #{password}, #{createTime}, #{modifyTime})
+            (#{username}, #{password}, now(), now())
     </insert>
 
     <select id="getByEmailOrName">
