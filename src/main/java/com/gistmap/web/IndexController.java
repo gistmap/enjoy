@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-	@GetMapping("/main")
+	@GetMapping("/")
 	public String home() {
 		return "main";
 	}
@@ -21,9 +21,12 @@ public class IndexController {
 	public String login(){
 		return "login";
 	}
-
 	@GetMapping("/regist")
 	public String regist() {
 		return "regist";
+	}
+	@GetMapping("/write")
+	public String write() {
+		return "write";
 	}
 }

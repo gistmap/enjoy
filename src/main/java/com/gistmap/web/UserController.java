@@ -1,19 +1,9 @@
 package com.gistmap.web;
 
-import com.gistmap.comm.Const;
-import com.gistmap.comm.ExceptionMsg;
-import com.gistmap.comm.Response;
-import com.gistmap.comm.ResponseData;
-import com.gistmap.entity.Music;
-import com.gistmap.entity.User;
 import com.gistmap.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.Cookie;
-import java.time.LocalDateTime;
 
 
 /**
@@ -29,10 +19,7 @@ public class UserController extends BaseController{
     @Autowired
     private UserService userService;
 
-    @GetMapping("/")
-    public String user(){
-        return "user";
-    }
+
 
 
     /*@PostMapping("/login")

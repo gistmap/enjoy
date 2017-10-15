@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="${basePath}/bootstrap/css/bootstrap.css">
 <link href="${basePath}/select2/css/select2.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="${basePath}/select2/css/select2-bootstrap.css">
+<link rel="stylesheet" href="${basePath}/css/navbar.css">
 <header>
 <div class="navbar navbar-inverse">
     <div class="container">
@@ -9,8 +10,17 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://builtwithbootstrap.com/" target="_blank">写故事</a></li>
-                <li><a href="/user/" target="_blank">个人中心</a></li>
+                <li><a href="/write" >写文章</a></li>
+
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img class="img-rounded nav-ava" src="img/ava.jfif"/><span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

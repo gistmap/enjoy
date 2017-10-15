@@ -8,6 +8,7 @@ package com.gistmap.comm;
 
 
 public class ResponseData extends Response{
+
     private Object data;
 
     public ResponseData(Object data) {

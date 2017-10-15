@@ -32,13 +32,13 @@
             (#{username}, #{password}, now(), now())
     </insert>
 
-    <select id="getByEmailOrName">
+    <select id="getByEmailOrName" resultType="User">
         SELECT
           *
         FROM
           user
         WHERE
-          email = #{email}
+          email = #{username}
         OR
           username = #{username}
     </select>

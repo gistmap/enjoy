@@ -13,6 +13,6 @@ public interface StoryService {
      * 保存故事
      * @param story
      */
-    int save(Story story);
+    Long save(Story story);
 
 }

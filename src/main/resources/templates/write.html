@@ -41,7 +41,7 @@
 
             ajax: {
                 type:'GET',
-                url: "/getName",
+                url: "/music/list",
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -75,16 +75,14 @@
         $('#sign').click(function () {
             var res= $("#b").select2("data")[0];
             var title = $('#title').val();
-            console.log(res);
-            console.log(res.id);
-            console.log(res.text);
             if (res.id == res.text) {
-                //new
+                d["name"] = res.text
             }
             var d = {
-                "title":title,
-                "tagId":res.id,
-                "content":editor.txt.html()
+                "title": title,
+                "tagId": res.id,
+                "content" : editor.txt.html(),
+                "brief": editor.txt.text()
             };
             $.ajax({
                 type: "post",

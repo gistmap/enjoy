@@ -33,10 +33,9 @@ public interface UserService {
     /**
      * 根据用户名或邮箱查询User对象
      * @param username
-     * @param email
      * @return
      */
-    User getByEmailOrName(String username, String email);
+    User getByEmailOrName(String username);
 
 
 
