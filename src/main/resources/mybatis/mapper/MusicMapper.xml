@@ -5,7 +5,7 @@
 	<insert id="save" keyProperty="id" useGeneratedKeys="true">
 		INSERT INTO
 			music
-				(name, uid)
+				(name, uid , create_time)
 		VALUES
 				(#{name}, #{uid}, now())
 	</insert>

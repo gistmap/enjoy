@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @Desc :
+ * @Desc : 故事控制器
  * @User : gistmap
  * @Date : 2017/10/7  14:11
  */
@@ -36,13 +36,14 @@ public class StoryController extends BaseController {
 		Story story = new Story();
 		BeanUtils.copyProperties(dto,story);
 		Long uid = 1L;
-		if (dto.getTagId() == null) {
+		if (dto.getTagId() == -1) {
 			Music music = new Music();
 			music.setName(dto.getName());
 			music.setUid(uid);
 			Long mid = musicService.save(music);
 			story.setTagId(mid);
 		}
+		story.setUid(uid);
 		Long id = storyService.save(story);
 		String url = "/story/"+id;
 		return new ResponseData(url);

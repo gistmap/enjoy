@@ -5,7 +5,7 @@
     <insert id="save" keyProperty="id" useGeneratedKeys="true">
         INSERT INTO
             story
-        (uid, title, tag_id, content, brief, createTime, modifyTime)
+        (uid, title, tag_id, content, brief, create_time, modify_time)
             VALUES
         (#{uid}, #{title}, #{tagId}, #{content}, #{brief}, now(), now())
     </insert>

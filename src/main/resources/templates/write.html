@@ -75,15 +75,18 @@
         $('#sign').click(function () {
             var res= $("#b").select2("data")[0];
             var title = $('#title').val();
-            if (res.id == res.text) {
-                d["name"] = res.text
-            }
             var d = {
                 "title": title,
                 "tagId": res.id,
                 "content" : editor.txt.html(),
                 "brief": editor.txt.text()
             };
+            console.log(res.text);
+            if (res.id == res.text) {
+                d["name"] = res.text
+                d["tagId"] = -1;
+            }
+
             $.ajax({
                 type: "post",
                 url: "/story/add",
