@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/8  12:45
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/8  12:45
  */
 public class CommonInterceptor  implements HandlerInterceptor {
 

@@ -18,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.time.LocalDateTime;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/8  17:32
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/8  17:32
  */
 @RestController
 public class LoginController extends BaseController {

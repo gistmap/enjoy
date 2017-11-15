@@ -1,15 +1,17 @@
 package com.gistmap.entity;
 
 import com.gistmap.annotation.Field;
+import com.gistmap.annotation.TableName;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Desc : 故事类
- * @User : gistmap
- * @Date : 2017/9/28  23:15
+ * @desc : 故事类
+ * @author : gistmap
+ * @date : 2017/9/28  23:15
  */
+@TableName(value = "story",  desc = "故事表")
 public class Story extends Entity implements Serializable {
 	private static final long serialVersionUID = -6705885177482880694L;
 

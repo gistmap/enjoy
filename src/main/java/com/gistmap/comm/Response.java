@@ -1,9 +1,9 @@
 package com.gistmap.comm;
 
 /**
- * @Desc : 返回响应工具类
- * @User : gistmap
- * @Date : 2017/9/4  15:23
+ * @desc : 返回响应工具类
+ * @author : gistmap
+ * @date : 2017/9/4  15:23
  */
 
 public class Response {

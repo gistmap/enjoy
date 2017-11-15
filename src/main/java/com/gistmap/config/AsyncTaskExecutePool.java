@@ -12,9 +12,9 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @Desc : 异步任务线程池
- * @User : gistmap
- * @Date : 2017/9/11  22:16
+ * @desc : 异步任务线程池
+ * @author : gistmap
+ * @date : 2017/9/11  22:16
  */
 @Configuration
 public class AsyncTaskExecutePool implements AsyncConfigurer {

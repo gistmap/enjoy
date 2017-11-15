@@ -11,9 +11,9 @@ import org.slf4j.LoggerFactory;
 import org.aspectj.lang.annotation.Aspect;
 
 /**
- * @Desc : 日志管理
- * @User : gistmap
- * @Date : 2017/9/13  22:16
+ * @desc : 日志管理
+ * @author : gistmap
+ * @date : 2017/9/13  22:16
  */
 @Aspect
 @Service

@@ -10,4 +10,18 @@
         (#{uid}, #{title}, #{tagId}, #{content}, #{brief}, now(), now())
     </insert>
 
+    <select id="get" resultType="StoryVO">
+        SELECT
+            story.id, story.title, user.name AS author, music.name,
+            story.content, story.brief, story.create_time
+        FROM
+            story
+            INNER JOIN user ON story.uid = user.id
+            INNER JOIN music ON story.tag_id = music.id
+        WHERE
+            story.id = #{id}
+            AND
+            story.flag = 1
+
+    </select>
 </mapper>

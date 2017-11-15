@@ -5,9 +5,9 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/8  12:50
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/8  12:50
  */
 @Configuration
 public class CommonInterceptorConfig extends WebMvcConfigurerAdapter {

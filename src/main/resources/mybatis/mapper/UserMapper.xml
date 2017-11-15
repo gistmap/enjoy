@@ -27,9 +27,9 @@
     <insert id="save" keyProperty="id" useGeneratedKeys="true">
         INSERT INTO
           user
-            (username, password, create_time, modify_time)
+            (email, username, password, create_time, modify_time)
         VALUES
-            (#{username}, #{password}, now(), now())
+            (#{email}, #{username}, #{password}, now(), now())
     </insert>
 
     <select id="getByEmailOrName" resultType="User">

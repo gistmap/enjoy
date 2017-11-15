@@ -22,7 +22,7 @@
     line-height: 28px;
 }
 .blog-inner .desc h4 a {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
 }
 .blog-inner .desc h3 a:hover, .blog-inner .desc h3 a:focus {
     text-decoration: none;

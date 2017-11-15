@@ -8,9 +8,9 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/15  21:29
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/15  21:29
  */
 @Mapper
 public interface MusicDao {

@@ -6,9 +6,9 @@ import com.gistmap.entity.MusicVO;
 import java.util.List;
 
 /**
- * @Desc : 音乐服务接口
- * @User : gistmap
- * @Date : 2017/10/15  21:23
+ * @desc : 音乐服务接口
+ * @author : gistmap
+ * @date : 2017/10/15  21:23
  */
 public interface MusicService {
 

@@ -21,6 +21,7 @@
                 </div>
 
                 <button type="button" class="btn btn-primary"  onclick="signIn()">提交</button>
+                <a href="/regist">还没账号？点击注册</a>
             </div>
         </form>
 
@@ -37,7 +38,6 @@
     var base = "${basePath}";
     function signIn() {
         var ok = $('#form').parsley().isValid({force: true});
-        alert(ok);
         if (!ok) {
             return;
         }
@@ -54,6 +54,7 @@
             dataType: "json",
             contentType: "application/json",
             success: function (data ){
+                console.log(data);
                 if (data.rspCode == "000000") {
                     layer.msg(data.rspMsg);
                     location.href=data.data;

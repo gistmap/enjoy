@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/15  21:29
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/15  21:29
  */
 @Service
 public class MusicServiceImpl implements MusicService {

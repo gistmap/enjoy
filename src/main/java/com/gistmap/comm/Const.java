@@ -2,9 +2,9 @@ package com.gistmap.comm;
 
 
 /**
- * @Desc : 常量类
- * @User : gistmap
- * @Date : 2017/9/4  20:16
+ * @desc : 常量类
+ * @author : gistmap
+ * @date : 2017/9/4  20:16
  */
 
 public class Const {

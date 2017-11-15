@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @Desc : 用户Service接口实现
- * @User : gistmap
- * @Date : 2017/9/6  22:25
+ * @desc : 用户Service接口实现
+ * @author : gistmap
+ * @date : 2017/9/6  22:25
  */
 
 @Service

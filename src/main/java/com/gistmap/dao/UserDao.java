@@ -5,9 +5,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 
 /**
- * @Desc : 用户Mapper
- * @User : gistmap
- * @Date : 2017/9/6  22:20
+ * @desc : 用户Mapper
+ * @author : gistmap
+ * @date : 2017/9/6  22:20
  */
 
 @Mapper

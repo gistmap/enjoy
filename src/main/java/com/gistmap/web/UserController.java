@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * @Desc : User Controller
- * @User : gistmap
- * @Date : 2017/9/6  22:25
+ * @desc : User Controller
+ * @author : gistmap
+ * @date : 2017/9/6  22:25
  */
 
 @Controller
@@ -19,7 +19,10 @@ public class UserController extends BaseController{
     @Autowired
     private UserService userService;
 
-
+    @GetMapping("/")
+    public String index(){
+        return "user";
+    }
 
 
     /*@PostMapping("/login")

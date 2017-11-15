@@ -3,9 +3,9 @@ package com.gistmap.service;
 import com.gistmap.entity.User;
 
 /**
- * @Desc : 用户Service接口
- * @User : gistmap
- * @Date : 2017/9/6  22:25
+ * @desc : 用户Service接口
+ * @author : gistmap
+ * @date : 2017/9/6  22:25
  */
 
 public interface UserService {

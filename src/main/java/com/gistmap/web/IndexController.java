@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @Desc : 跳转
- * @User : gistmap
- * @Date : 2017/9/16  11:50
+ * @desc : 跳转
+ * @author : gistmap
+ * @date : 2017/9/16  11:50
  */
 @Controller
 public class IndexController {

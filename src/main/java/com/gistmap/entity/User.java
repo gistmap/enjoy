@@ -8,9 +8,9 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
- * @Desc : 用户类
- * @User : gistmap
- * @Date : 2017/9/6  22:18
+ * @desc : 用户类
+ * @author : gistmap
+ * @date : 2017/9/6  22:18
  */
 @TableName(value = "user",  desc = "用户表")
 public class User extends Entity implements Serializable
@@ -116,17 +116,5 @@ public class User extends Entity implements Serializable
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", flag=" + flag +
-                ", createTime=" + createTime +
-                ", modifyTime=" + modifyTime +
-                '}';
-    }
+
 }

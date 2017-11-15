@@ -3,26 +3,23 @@ package com.gistmap.filter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.gistmap.comm.Const;
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 
 public class AuthorizeFilter implements Filter {
 	
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		//ServletContext context = filterConfig.getServletContext();  
-        //ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(context);
+		ServletContext context = filterConfig.getServletContext();
+        ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(context);
 	}
 	
-	private List<String> whiteList = Arrays.asList("/static", "/login", "/favicon.ico", "/img");
+	private List<String> whiteList = Arrays.asList("/static", "/regist", "/login", "/favicon.ico", "/img");
 	
 	private boolean containsWhite(String uri) {
 		for (String bkUri : whiteList) {

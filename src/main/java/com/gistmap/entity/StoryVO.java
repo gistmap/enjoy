@@ -1,24 +1,21 @@
 package com.gistmap.entity;
 
-import com.gistmap.annotation.Field;
-
-import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
- * @desc :
+ * @desc : 故事显示对象
  * @author : gistmap
- * @date : 2017/10/15  21:54
+ * @date : 2017/10/17  22:29
  */
-public class StoryDto extends Entity {
-
+public class StoryVO {
 	private Long id;
-	private Long uid;
 	private String title;
-	private Long tagId;
+	private String author;
+	private String name;
 	private String content;
 	private String brief;
-
-	private String name;
+	private LocalDateTime createTime;
 
 	public Long getId() {
 		return id;
@@ -26,14 +23,6 @@ public class StoryDto extends Entity {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public Long getUid() {
-		return uid;
-	}
-
-	public void setUid(Long uid) {
-		this.uid = uid;
 	}
 
 	public String getTitle() {
@@ -44,12 +33,20 @@ public class StoryDto extends Entity {
 		this.title = title;
 	}
 
-	public Long getTagId() {
-		return tagId;
+	public String getAuthor() {
+		return author;
 	}
 
-	public void setTagId(Long tagId) {
-		this.tagId = tagId;
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getContent() {
@@ -68,11 +65,11 @@ public class StoryDto extends Entity {
 		this.brief = brief;
 	}
 
-	public String getName() {
-		return name;
+	public LocalDateTime getCreateTime() {
+		return createTime;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setCreateTime(LocalDateTime createTime) {
+		this.createTime = createTime;
 	}
 }

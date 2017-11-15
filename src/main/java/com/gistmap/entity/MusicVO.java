@@ -1,9 +1,9 @@
 package com.gistmap.entity;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/7  14:14
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/7  14:14
  */
 public class MusicVO {
 	private int id;

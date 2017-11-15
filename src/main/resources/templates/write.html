@@ -94,8 +94,10 @@
                 dataType: "json",
                 contentType: "application/json",
                 success: function (data){
+                    console.log(1);
                     if (data.rspCode == "000000") {
                         layer.msg(data.rspMsg);
+                        location.href="../story/"+data.data;
                     } else {
                         layer.msg(data.rspMsg);
                     }

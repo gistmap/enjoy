@@ -3,9 +3,9 @@ package com.gistmap.annotation;
 import java.lang.annotation.*;
 
 /**
- * @Desc : 日志管理
- * @User : gistmap
- * @Date : 2017/9/13  22:16
+ * @desc : 日志管理
+ * @author : gistmap
+ * @date : 2017/9/13  22:16
  */
 
 @Target(ElementType.METHOD)
@@ -13,5 +13,5 @@ import java.lang.annotation.*;
 @Documented
 public @interface LoggerManage {
 
-    public String description();
+    String description();
 }

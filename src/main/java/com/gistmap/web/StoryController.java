@@ -5,20 +5,21 @@ import com.gistmap.comm.ResponseData;
 import com.gistmap.entity.Music;
 import com.gistmap.entity.Story;
 import com.gistmap.entity.StoryDto;
+import com.gistmap.entity.StoryVO;
 import com.gistmap.service.MusicService;
 import com.gistmap.service.StoryService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
- * @Desc : 故事控制器
- * @User : gistmap
- * @Date : 2017/10/7  14:11
+ * @desc : 故事控制器
+ * @author : gistmap
+ * @date : 2017/10/7  14:11
  */
 @Controller
 @RequestMapping("/story")
@@ -47,5 +48,12 @@ public class StoryController extends BaseController {
 		Long id = storyService.save(story);
 		String url = "/story/"+id;
 		return new ResponseData(url);
+	}
+
+	@GetMapping(value = "/{storyId}")
+	public String get(@PathVariable("storyId") Long id, Model model) {
+		StoryVO story = storyService.get(id);
+		model.addAttribute("story", story);
+		return "story";
 	}
 }

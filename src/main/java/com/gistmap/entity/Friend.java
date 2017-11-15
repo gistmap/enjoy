@@ -7,9 +7,9 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/9/28  22:42
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/9/28  22:42
  */
 @TableName(value = "friend",  desc = "用户关系表")
 public class Friend extends Entity implements Serializable{

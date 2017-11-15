@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 /**
- * @Desc : 其他Controller需继承此Controller
- * @User : gistmap
- * @Date : 2017/9/6  22:25
+ * @desc : 其他Controller需继承此Controller
+ * @author : gistmap
+ * @date : 2017/9/6  22:25
  */
 
 @Controller
@@ -43,7 +43,7 @@ public class BaseController {
     }
 
     protected Long getUserId() {
-        Long id=0l;
+        Long id=0L;
         User user=getUser();
         if(user!=null){
             id=user.getId();

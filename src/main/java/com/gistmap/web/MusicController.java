@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/15  21:21
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/15  21:21
  */
 @RestController
 @RequestMapping("/music")

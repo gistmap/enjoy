@@ -1,11 +1,13 @@
 package com.gistmap.service;
 
 import com.gistmap.entity.Story;
+import com.gistmap.entity.StoryDto;
+import com.gistmap.entity.StoryVO;
 
 /**
- * @Desc :
- * @User : gistmap
- * @Date : 2017/10/11 19:01
+ * @desc :
+ * @author : gistmap
+ * @date : 2017/10/11 19:01
  */
 public interface StoryService {
 
@@ -15,4 +17,10 @@ public interface StoryService {
      */
     Long save(Story story);
 
+	/**
+	 * 查询故事
+	 * @param id
+	 * @return
+	 */
+	StoryVO get(Long id);
 }

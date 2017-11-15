@@ -7,9 +7,9 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Desc : 音乐标签
- * @User : gistmap
- * @Date : 2017/9/27  22:45
+ * @desc : 音乐标签
+ * @author : gistmap
+ * @date : 2017/9/27  22:45
  */
 @TableName(value = "music",  desc = "音乐标签表")
 public class Music extends Entity implements Serializable{

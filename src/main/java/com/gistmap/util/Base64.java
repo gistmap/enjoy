@@ -462,8 +462,9 @@ public class Base64 {
 
 	public static String decode(String cryptoStr)
 			throws UnsupportedEncodingException {
-		if (cryptoStr.length() < 40)
+		if (cryptoStr.length() < 40) {
 			return "";
+		}
 		try {
 			String tempStr = new String(decode(cryptoStr.getBytes("UTF-8")));
 			String result = tempStr.substring(40, tempStr.length());

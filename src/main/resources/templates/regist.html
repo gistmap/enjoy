@@ -41,7 +41,6 @@
     var base = "${basePath}";
     function signUp() {
         var ok = $('#form').parsley().isValid({force: true});
-        alert(ok);
         if (!ok) {
             return;
         }
