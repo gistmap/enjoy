@@ -2,34 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>写文章</title>
 </head>
 <body>
 <#include "header.html">
 <div class="container">
 
-    <div class="row">
+    <h3>写文章</h3>
+    <br>
+    <div class="col-lg-12">
         <div class="form-group">
-            <label for="title">标题</label>
-            <input type="text" class="form-control" id="title" placeholder="请输入标题">
+            <fieldset>
+                <label for="title">标题</label>
+                <input type="text" class="form-control" id="title" placeholder="请输入标题">
+            </fieldset>
         </div>
-    </div>
-    <div class="row">
+
+
         <div class="form-group">
             <label for="b">歌名</label>
             <select class="js-example-basic-single" id="b" name="name" multiple="multiple">
             </select>
         </div>
-    </div>
 
-    <div class="row">x
 
-    </div>
-    <div class="row">
-        <div id="editor">
-            <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+
+
+        <div class="form-group">
+            <div id="editor">
+                <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+            </div>
         </div>
-    </div>
     <button id="sign" type="submit">获取html</button>
 
 </div>

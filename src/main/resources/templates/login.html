@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <style>
+        .blank_row{
+            margin-bottom: 180px;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
+    <div class="row blank_row"></div>
     <div class="row">
-        <form id="form" data-parsley-validate >
-            <div class="col-md-3 col-md-offset-8">
-                <div class="form-group">
-                    <label for="username"> 邮箱/账号 </label>
-                    <input type="text" class="form-control" id="username" name="username" data-parsley-required="true"/>
-                </div>
-                <div class="form-group">
-                    <label for="password"> 密码 </label>
-                    <input type="password" class="form-control" id="password" name="password" data-parsley-required="true" data-parsley-minlength="8"/>
-                </div>
-
-                <button type="button" class="btn btn-primary"  onclick="signIn()">提交</button>
-                <a href="/regist">还没账号？点击注册</a>
-            </div>
-        </form>
+        <div class="col-lg-8">
+            slogan
+        </div>
+        <div class="col-lg-3">
+            <form id="form" data-parsley-validate >
+                    <div class="form-group">
+                        <label for="username"> 邮箱/账号 </label>
+                        <input type="text" class="form-control" id="username" name="username" data-parsley-required="true"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"> 密码 </label>
+                        <input type="password" class="form-control" id="password" name="password" data-parsley-required="true" data-parsley-minlength="8"/>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" class="btn btn-primary btn-lg btn-block"  onclick="signIn()">登录</button>
+                    </div>
+                    <a href="/regist">还没账号？点击注册</a>
+            </form>
+        </div>
 
     </div>
 </div>
 
 <script src="jquery/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="layer/layer.js"></script>
-<script src="layer/laypage/laypage.js"></script>
+<script src="popper/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 <script src="parsley/parsley.min.js"></script>
 <script src="parsley/zh_cn.js"></script>
 <script>
