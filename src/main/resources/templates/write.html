@@ -32,10 +32,10 @@
 
         <div class="form-group">
             <div id="editor">
-                <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+
             </div>
         </div>
-    <button id="sign" type="submit">获取html</button>
+        <button id="sign" type="submit" class="btn btn-primary">发布</button>
 
 </div>
 
@@ -74,6 +74,7 @@
 
         var E = window.wangEditor;
         var editor = new E('#editor');
+        editor.customConfig.uploadImgServer = '/upload'
         editor.customConfig.zIndex = 1;
         editor.create();
 

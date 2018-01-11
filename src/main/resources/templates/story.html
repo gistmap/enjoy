@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>文章</title>
+    <style>
+        img{
+            width:55px;
+            height: 55px;
+        }
+
+    </style>
 </head>
 <body>
 <#include "header.html">
     <div class="container">
         <div class="row">
-            <h1>${story.title!}</h1>-<h3>《${story.name!}》</h3>
-            <h3>${story.author!}写于${story.createTime?string.short}</h3>
-            <div>
-                ${story.content!}
+            <div class="col-lg-8 offset-lg-2">
+                <h2 class="text-center">${story.title!}</h2> <br>
+                <p class="text-right font-italic">《${story.name!}》</p>
+                <p class="text-right font-italic">${story.author!} 写于 ${story.createTime?string("yyyy-MM-dd HH:mm")}</p>
+                <div>
+                    ${story.content!}
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img class="rounded-circle" src="${basePath}/img/ava.jfif">
+                    </div>
+                    <div class="col-lg-11">
+                        <input type="text" value="correct value" class="form-control m-2" id="inputValid">
+                    </div>
+                </div>
+                <div class="float-right">
+                    <button class="btn btn-primary">评论</button>
+                </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>

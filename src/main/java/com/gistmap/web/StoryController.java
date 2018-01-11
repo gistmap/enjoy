@@ -36,6 +36,7 @@ public class StoryController extends BaseController {
 
 		Story story = new Story();
 		BeanUtils.copyProperties(dto,story);
+		story.setBrief(dto.getBrief().substring(0,50));
 		Long uid = 1L;
 		if (dto.getTagId() == -1) {
 			Music music = new Music();
@@ -56,4 +57,5 @@ public class StoryController extends BaseController {
 		model.addAttribute("story", story);
 		return "story";
 	}
+
 }

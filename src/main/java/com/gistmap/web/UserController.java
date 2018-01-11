@@ -1,9 +1,15 @@
 package com.gistmap.web;
 
+import com.gistmap.comm.RelativeDateFormat;
+import com.gistmap.entity.StoryVO;
+import com.gistmap.service.StoryService;
 import com.gistmap.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -18,9 +24,17 @@ public class UserController extends BaseController{
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private StoryService storyService;
 
     @GetMapping("/")
-    public String index(){
+    public String index(Map<String,Object> model){
+        Long uid = getUserId();
+        List<StoryVO> list = storyService.list(uid);
+        list.forEach(vo ->{
+            vo.setDateStr(RelativeDateFormat.format(vo.getCreateTime()));
+        });
+        model.put("stories",list);
         return "user";
     }
 

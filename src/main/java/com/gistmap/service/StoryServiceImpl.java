@@ -8,6 +8,8 @@ import com.gistmap.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @desc :
  * @author : gistmap
@@ -27,5 +29,10 @@ public class StoryServiceImpl implements StoryService{
     @Override
     public StoryVO get(Long id) {
         return storyDao.get(id);
+    }
+
+    @Override
+    public List<StoryVO> list(Long uid) {
+        return storyDao.list(uid);
     }
 }

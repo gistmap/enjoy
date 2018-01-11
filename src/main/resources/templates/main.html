@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <style>
+        .home-img{
+            width: 185px;
+            height: 175px;
+        }
+        .card-body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 0rem;
+        }
+    </style>
 </head>
 <body>
     <#include "header.html">
@@ -10,15 +22,53 @@
         <h3>热门内容...<a>more</a></h3>
         <div class="row">
 
-            <div class="col-lg-5">
+            <div class="col-lg-4">
                 <div class="row">
-                    <div class="col-lg-6"><img class="img-thumbnail" src="img/1.jpg"/>文字</div>
-                    <div class="col-lg-6"><img class="img-thumbnail" src="img/2.jpg"/></div>
-                    <div class="col-lg-6"><img class="img-thumbnail" src="img/3.jpg"/></div>
-                    <div class="col-lg-6"><img class="img-thumbnail" src="img/4.jpg"/></div>
+                    <div class="col-lg-6"><img class="home-img" src="img/1.jpg"/>文字</div>
+                    <div class="col-lg-6"><img class="home-img" src="img/2.jpg"/>文字</div>
+                    <div class="col-lg-6"><img class="home-img" src="img/3.jpg"/>文字</div>
+                    <div class="col-lg-6"><img class="home-img" src="img/4.jpg"/>文字</div>
                 </div>
             </div>
-            <div class="col-lg-8"></div>
+            <div class="col-lg-8">
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        Cras justo odio
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">Morbi leo risus
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">Morbi leo risus
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">Morbi leo risus
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">Morbi leo risus
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">Morbi leo risus
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">Morbi leo risus
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3>最新内容...<a>more</a></h3>
+        <div class="row">
+            <div class="col">
+                <#list stories as vo>
+                    <div class="list-group">
+                        <a href="${basePath}/story/${vo.id}" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">${vo.title}</h5>
+                                <small>${vo.author}</small>
+                            </div>
+                            <p class="mb-1">${vo.brief}</p>
+                        </a>
+                    </div>
+                </#list>
+            </div>
         </div>
     </div>
 </body>

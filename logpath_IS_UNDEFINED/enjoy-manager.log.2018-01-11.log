@@ -1,0 +1,638 @@
+2018-01-11 10:19:02.169 [restartedMain] INFO  com.gistmap.EnjoyApplication - Starting EnjoyApplication on DESKTOP-9DR37MS with PID 13200 (C:\gistmap\enjoy\enjoy\target\classes started by 45286 in C:\gistmap\enjoy\enjoy)
+2018-01-11 10:19:02.170 [restartedMain] INFO  com.gistmap.EnjoyApplication - No active profile set, falling back to default profiles: default
+2018-01-11 10:19:02.326 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@514c84df: startup date [Thu Jan 11 10:19:02 CST 2018]; root of context hierarchy
+2018-01-11 10:19:02.583 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-11 10:19:05.136 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 10:19:05.994 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7001 (http)
+2018-01-11 10:19:06.009 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-11 10:19:06.011 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-01-11 10:19:06.141 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-01-11 10:19:06.142 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3816 ms
+2018-01-11 10:19:06.372 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 10:19:06.374 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-01-11 10:19:06.379 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 10:19:06.380 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 10:19:06.380 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 10:19:06.381 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 10:19:06.381 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-01-11 10:19:08.202 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@514c84df: startup date [Thu Jan 11 10:19:02 CST 2018]; root of context hierarchy
+2018-01-11 10:19:08.288 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/write],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.write()
+2018-01-11 10:19:08.289 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.home()
+2018-01-11 10:19:08.289 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regist],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.regist()
+2018-01-11 10:19:08.289 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.login()
+2018-01-11 10:19:08.293 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signIn],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signIn(com.gistmap.entity.User,javax.servlet.http.HttpServletResponse)
+2018-01-11 10:19:08.293 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signUp],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signUp(com.gistmap.entity.User)
+2018-01-11 10:19:08.296 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/music/list],methods=[GET]}" onto public java.util.List<com.gistmap.entity.MusicVO> com.gistmap.web.MusicController.list(java.lang.String)
+2018-01-11 10:19:08.297 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/{storyId}],methods=[GET]}" onto public java.lang.String com.gistmap.web.StoryController.get(java.lang.Long,org.springframework.ui.Model)
+2018-01-11 10:19:08.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/add],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.StoryController.save(com.gistmap.entity.StoryDto)
+2018-01-11 10:19:08.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/],methods=[GET]}" onto public java.lang.String com.gistmap.web.UserController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-11 10:19:08.300 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 10:19:08.301 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 10:19:08.493 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 10:19:08.494 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 10:19:08.572 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 10:19:08.925 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-11 10:19:09.209 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-11 10:19:09.494 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-11 10:19:09.497 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-01-11 10:19:09.497 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-11 10:19:09.506 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-01-11 10:19:09.509 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-01-11 10:19:09.526 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7001"]
+2018-01-11 10:19:09.542 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7001"]
+2018-01-11 10:19:09.559 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-11 10:19:09.585 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7001 (http)
+2018-01-11 10:19:09.591 [restartedMain] INFO  com.gistmap.EnjoyApplication - Started EnjoyApplication in 8.147 seconds (JVM running for 9.646)
+2018-01-11 10:19:29.315 [http-nio-7001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-11 10:19:29.316 [http-nio-7001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 10:19:29.347 [http-nio-7001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-01-11 10:19:29.760 [http-nio-7001-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-11 10:19:29.761 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 10:19:29","connectCount":0,"closeCount":0,"physicalConnectCount":10}
+2018-01-11 10:24:29.768 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 10:19:29","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 10:19:29","connectCount":3,"closeCount":3,"executeCount":3,"pstmtCacheHitCount":1,"pstmtCacheMissCount":2,"connectionHoldTimeHistogram":[0,2,0,1],"clobOpenCount":2,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":2,"executeMillisMax":39,"executeMillisTotal":40,"executeHistogram":[1,0,1],"executeAndResultHoldHistogram":[2],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,2],"clobOpenCount":2},{"sql":"SELECT\n          *\n        FROM\n          user\n        WHERE\n          email = ?\n        OR\n          username = ?","executeCount":1,"executeMillisMax":1,"executeMillisTotal":1,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1]}]}
+2018-01-11 10:29:29.768 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 10:26:08","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 10:26:08","connectCount":3,"closeCount":3,"executeCount":3,"pstmtCacheHitCount":3,"connectionHoldTimeHistogram":[0,3],"clobOpenCount":3,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":3,"executeMillisMax":0,"executeMillisTotal":2,"executeHistogram":[3],"executeAndResultHoldHistogram":[3],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,3],"clobOpenCount":3}]}
+2018-01-11 10:34:29.768 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 10:39:29.769 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 10:44:29.770 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 10:49:29.771 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 10:54:29.772 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 10:58:57.679 [http-nio-7001-exec-2] ERROR freemarker.runtime - Error executing FreeMarker template
+freemarker.core.NonNumericalException: For "/" left-hand operand: Expected a number, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> basePath  [in template "story.html" at line 20, column 56]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${basePath / img / ava.jiff}  [in template "story.html" at line 20, column 54]
+----
+	at freemarker.core.Expression.modelToNumber(Expression.java:126)
+	at freemarker.core.Expression.evalToNumber(Expression.java:119)
+	at freemarker.core.ArithmeticExpression._eval(ArithmeticExpression.java:51)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.Expression.evalToNumber(Expression.java:118)
+	at freemarker.core.ArithmeticExpression._eval(ArithmeticExpression.java:51)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-11 10:58:57.690 [http-nio-7001-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core.NonNumericalException: For "/" left-hand operand: Expected a number, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> basePath  [in template "story.html" at line 20, column 56]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${basePath / img / ava.jiff}  [in template "story.html" at line 20, column 54]
+----] with root cause
+freemarker.core.NonNumericalException: For "/" left-hand operand: Expected a number, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> basePath  [in template "story.html" at line 20, column 56]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${basePath / img / ava.jiff}  [in template "story.html" at line 20, column 54]
+----
+	at freemarker.core.Expression.modelToNumber(Expression.java:126)
+	at freemarker.core.Expression.evalToNumber(Expression.java:119)
+	at freemarker.core.ArithmeticExpression._eval(ArithmeticExpression.java:51)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.Expression.evalToNumber(Expression.java:118)
+	at freemarker.core.ArithmeticExpression._eval(ArithmeticExpression.java:51)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-11 10:58:57.795 [http-nio-7001-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "FreeMarkertemplateerror(DEBUGmode"
+2018-01-11 10:58:57.796 [http-nio-7001-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "FreeMarkertemplateerror(DEBUGmode"
+2018-01-11 10:59:29.773 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 10:58:57","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 10:58:57","connectCount":1,"closeCount":1,"executeCount":1,"pstmtCacheHitCount":1,"connectionHoldTimeHistogram":[0,1],"clobOpenCount":1,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":1,"executeMillisMax":5,"executeMillisTotal":5,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1],"clobOpenCount":1}]}
+2018-01-11 11:04:29.773 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 11:09:29.774 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:08:36","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:08:36","connectCount":1,"closeCount":1,"executeCount":1,"pstmtCacheHitCount":1,"connectionHoldTimeHistogram":[0,1],"clobOpenCount":1,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":1,"executeMillisMax":2,"executeMillisTotal":2,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1],"clobOpenCount":1}]}
+2018-01-11 11:14:29.774 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 11:19:29.776 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:14:46","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:14:46","connectCount":1,"closeCount":1,"executeCount":1,"pstmtCacheHitCount":1,"connectionHoldTimeHistogram":[0,1],"clobOpenCount":1,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":1,"executeMillisMax":2,"executeMillisTotal":2,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1],"clobOpenCount":1}]}
+2018-01-11 11:24:29.776 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 11:29:29.777 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:27:46","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:27:46","connectCount":3,"closeCount":3,"executeCount":3,"pstmtCacheHitCount":3,"connectionHoldTimeHistogram":[0,3],"clobOpenCount":3,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":3,"executeMillisMax":1,"executeMillisTotal":3,"executeHistogram":[2,1],"executeAndResultHoldHistogram":[3],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,3],"clobOpenCount":3}]}
+2018-01-11 11:34:29.778 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:29:50","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:29:50","connectCount":5,"closeCount":5,"executeCount":5,"pstmtCacheHitCount":5,"connectionHoldTimeHistogram":[0,5],"clobOpenCount":5,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":5,"executeMillisMax":0,"executeMillisTotal":3,"executeHistogram":[5],"executeAndResultHoldHistogram":[5],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,5],"clobOpenCount":5}]}
+2018-01-11 11:39:29.780 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:36:30","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:36:30","connectCount":2,"closeCount":2,"executeCount":2,"pstmtCacheHitCount":2,"connectionHoldTimeHistogram":[0,2],"clobOpenCount":2,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":2,"executeMillisMax":0,"executeMillisTotal":1,"executeHistogram":[2],"executeAndResultHoldHistogram":[2],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,2],"clobOpenCount":2}]}
+2018-01-11 11:44:29.783 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:39:41","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:39:41","connectCount":8,"closeCount":8,"executeCount":8,"pstmtCacheHitCount":8,"connectionHoldTimeHistogram":[0,7,1],"clobOpenCount":8,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":8,"executeMillisMax":1,"executeMillisTotal":6,"executeHistogram":[7,1],"executeAndResultHoldHistogram":[8],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,8],"clobOpenCount":8}]}
+2018-01-11 11:49:29.788 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:45:09","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:45:09","connectCount":9,"closeCount":9,"executeCount":9,"pstmtCacheHitCount":9,"connectionHoldTimeHistogram":[0,9],"clobOpenCount":9,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":9,"executeMillisMax":0,"executeMillisTotal":6,"executeHistogram":[9],"executeAndResultHoldHistogram":[9],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,9],"clobOpenCount":9}]}
+2018-01-11 11:54:29.790 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:49:31","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:49:31","connectCount":5,"closeCount":5,"executeCount":5,"pstmtCacheHitCount":5,"connectionHoldTimeHistogram":[0,5],"clobOpenCount":5,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":5,"executeMillisMax":3,"executeMillisTotal":6,"executeHistogram":[4,1],"executeAndResultHoldHistogram":[5],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,5],"clobOpenCount":5}]}
+2018-01-11 11:59:29.791 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 11:56:47","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 11:56:47","connectCount":2,"closeCount":2,"executeCount":2,"pstmtCacheHitCount":2,"connectionHoldTimeHistogram":[0,2],"clobOpenCount":2,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":2,"executeMillisMax":0,"executeMillisTotal":1,"executeHistogram":[2],"executeAndResultHoldHistogram":[2],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,2],"clobOpenCount":2}]}
+2018-01-11 12:04:29.792 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:09:29.793 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:14:29.793 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:19:29.793 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:24:29.793 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:29:29.794 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:34:29.794 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:39:29.795 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:44:29.796 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:49:29.796 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:54:29.796 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 12:59:29.797 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:04:29.797 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:09:29.798 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 13:06:14","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 13:06:14","connectCount":1,"closeCount":1,"executeCount":1,"pstmtCacheHitCount":1,"connectionHoldTimeHistogram":[0,1],"clobOpenCount":1,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":1,"executeMillisMax":4,"executeMillisTotal":4,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1],"clobOpenCount":1}]}
+2018-01-11 13:14:29.798 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 13:09:57","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 13:09:57","connectCount":9,"closeCount":9,"executeCount":9,"pstmtCacheHitCount":9,"connectionHoldTimeHistogram":[0,9],"clobOpenCount":9,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":9,"executeMillisMax":1,"executeMillisTotal":7,"executeHistogram":[7,2],"executeAndResultHoldHistogram":[9],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,9],"clobOpenCount":9}]}
+2018-01-11 13:19:29.800 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 13:15:10","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 13:15:10","connectCount":4,"closeCount":4,"executeCount":4,"pstmtCacheHitCount":4,"connectionHoldTimeHistogram":[0,4],"clobOpenCount":4,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":4,"executeMillisMax":0,"executeMillisTotal":2,"executeHistogram":[4],"executeAndResultHoldHistogram":[4],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,4],"clobOpenCount":4}]}
+2018-01-11 13:24:29.800 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:29:29.806 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:34:29.808 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:39:29.809 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:44:29.811 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:49:29.811 [Druid-ConnectionPool-Log-218774380] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-218774380","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 13:49:52.088 [Thread-22] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@514c84df: startup date [Thu Jan 11 10:19:02 CST 2018]; root of context hierarchy
+2018-01-11 13:49:52.102 [Thread-22] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-01-11 13:49:52.103 [Thread-22] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-01-11 13:49:52.126 [Thread-22] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-01-11 13:49:53.241 [restartedMain] INFO  com.gistmap.EnjoyApplication - Starting EnjoyApplication on DESKTOP-9DR37MS with PID 13200 (C:\gistmap\enjoy\enjoy\target\classes started by 45286 in C:\gistmap\enjoy\enjoy)
+2018-01-11 13:49:53.242 [restartedMain] INFO  com.gistmap.EnjoyApplication - No active profile set, falling back to default profiles: default
+2018-01-11 13:49:53.248 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c6cbf4: startup date [Thu Jan 11 13:49:53 CST 2018]; root of context hierarchy
+2018-01-11 13:49:54.287 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:49:54.487 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7001 (http)
+2018-01-11 13:49:54.489 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-11 13:49:54.489 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-01-11 13:49:54.519 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-01-11 13:49:54.520 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1272 ms
+2018-01-11 13:49:54.600 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:49:54.601 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-01-11 13:49:54.601 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:49:54.601 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:49:54.601 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:49:54.601 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:49:54.601 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-01-11 13:49:56.699 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c6cbf4: startup date [Thu Jan 11 13:49:53 CST 2018]; root of context hierarchy
+2018-01-11 13:49:56.727 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signIn],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signIn(com.gistmap.entity.User,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:49:56.728 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signUp],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signUp(com.gistmap.entity.User)
+2018-01-11 13:49:56.730 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/music/list],methods=[GET]}" onto public java.util.List<com.gistmap.entity.MusicVO> com.gistmap.web.MusicController.list(java.lang.String)
+2018-01-11 13:49:56.733 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/{storyId}],methods=[GET]}" onto public java.lang.String com.gistmap.web.StoryController.get(java.lang.Long,org.springframework.ui.Model)
+2018-01-11 13:49:56.734 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/add],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.StoryController.save(com.gistmap.entity.StoryDto)
+2018-01-11 13:49:56.737 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/],methods=[GET]}" onto public java.lang.String com.gistmap.web.UserController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-11 13:49:56.741 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:49:56.743 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:49:56.769 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:49:56.769 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:49:56.813 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:49:56.930 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-11 13:49:57.071 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-11 13:49:57.451 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-11 13:49:57.452 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-01-11 13:49:57.453 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-11 13:49:57.459 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-01-11 13:49:57.461 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-01-11 13:49:57.467 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7001"]
+2018-01-11 13:49:57.468 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7001"]
+2018-01-11 13:49:57.469 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-11 13:49:57.475 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7001 (http)
+2018-01-11 13:49:57.477 [restartedMain] INFO  com.gistmap.EnjoyApplication - Started EnjoyApplication in 4.602 seconds (JVM running for 12657.533)
+2018-01-11 14:01:17.415 [restartedMain] INFO  com.gistmap.EnjoyApplication - Starting EnjoyApplication on DESKTOP-9DR37MS with PID 3448 (C:\gistmap\enjoy\enjoy\target\classes started by 45286 in C:\gistmap\enjoy\enjoy)
+2018-01-11 14:01:17.416 [restartedMain] INFO  com.gistmap.EnjoyApplication - No active profile set, falling back to default profiles: default
+2018-01-11 14:01:17.503 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11500d5b: startup date [Thu Jan 11 14:01:17 CST 2018]; root of context hierarchy
+2018-01-11 14:01:17.680 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-11 14:01:19.567 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 14:01:20.310 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7001 (http)
+2018-01-11 14:01:20.326 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-11 14:01:20.327 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-01-11 14:01:20.458 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-01-11 14:01:20.458 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2955 ms
+2018-01-11 14:01:20.689 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 14:01:20.690 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-01-11 14:01:20.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 14:01:20.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 14:01:20.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 14:01:20.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 14:01:20.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-01-11 14:01:22.470 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11500d5b: startup date [Thu Jan 11 14:01:17 CST 2018]; root of context hierarchy
+2018-01-11 14:01:22.603 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/write],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.write()
+2018-01-11 14:01:22.607 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.home(org.springframework.ui.Model)
+2018-01-11 14:01:22.609 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.login()
+2018-01-11 14:01:22.609 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regist],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.regist()
+2018-01-11 14:01:22.613 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signUp],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signUp(com.gistmap.entity.User)
+2018-01-11 14:01:22.613 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signIn],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signIn(com.gistmap.entity.User,javax.servlet.http.HttpServletResponse)
+2018-01-11 14:01:22.615 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/music/list],methods=[GET]}" onto public java.util.List<com.gistmap.entity.MusicVO> com.gistmap.web.MusicController.list(java.lang.String)
+2018-01-11 14:01:22.617 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/{storyId}],methods=[GET]}" onto public java.lang.String com.gistmap.web.StoryController.get(java.lang.Long,org.springframework.ui.Model)
+2018-01-11 14:01:22.618 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/add],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.StoryController.save(com.gistmap.entity.StoryDto)
+2018-01-11 14:01:22.620 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/],methods=[GET]}" onto public java.lang.String com.gistmap.web.UserController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-11 14:01:22.626 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 14:01:22.626 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 14:01:22.842 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 14:01:22.842 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 14:01:22.899 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 14:01:23.158 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-11 14:01:23.451 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-11 14:01:23.717 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-11 14:01:23.719 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-01-11 14:01:23.719 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-11 14:01:23.727 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-01-11 14:01:23.729 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-01-11 14:01:23.747 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7001"]
+2018-01-11 14:01:23.759 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7001"]
+2018-01-11 14:01:23.774 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-11 14:01:23.794 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7001 (http)
+2018-01-11 14:01:23.801 [restartedMain] INFO  com.gistmap.EnjoyApplication - Started EnjoyApplication in 6.912 seconds (JVM running for 8.247)
+2018-01-11 14:01:32.946 [http-nio-7001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-11 14:01:32.946 [http-nio-7001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 14:01:32.974 [http-nio-7001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-01-11 14:01:33.351 [http-nio-7001-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-11 14:01:33.353 [Druid-ConnectionPool-Log-1036826050] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1036826050","activeCount":0,"poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 14:01:33","connectCount":0,"closeCount":0,"physicalConnectCount":10}
+2018-01-11 14:06:33.360 [Druid-ConnectionPool-Log-1036826050] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1036826050","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 14:01:33","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 14:01:33","connectCount":1,"closeCount":1,"executeCount":1,"pstmtCacheMissCount":1,"connectionHoldTimeHistogram":[0,0,0,1],"clobOpenCount":2,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.flag = ?","executeCount":1,"executeMillisMax":3,"executeMillisTotal":3,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":2,"fetchRowHistogram":[0,1],"clobOpenCount":2}]}
+2018-01-11 14:11:33.361 [Druid-ConnectionPool-Log-1036826050] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1036826050","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 14:07:58","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 14:07:58","connectCount":8,"closeCount":8,"executeCount":8,"pstmtCacheHitCount":7,"pstmtCacheMissCount":1,"connectionHoldTimeHistogram":[0,8],"clobOpenCount":14,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.flag = ?","executeCount":6,"executeMillisMax":1,"executeMillisTotal":5,"executeHistogram":[4,2],"executeAndResultHoldHistogram":[6],"concurrentMax":1,"fetchRowCount":2,"fetchRowHistogram":[0,6],"clobOpenCount":12},{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.id = ?\n\tAND story.flag = ?","executeCount":2,"executeMillisMax":0,"executeMillisTotal":1,"executeHistogram":[2],"executeAndResultHoldHistogram":[2],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,2],"clobOpenCount":2}]}
+2018-01-11 14:15:58.107 [http-nio-7001-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'uid' in 'class java.lang.Long'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'uid' in 'class java.lang.Long'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:94)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:108)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2671)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTAnd.getValueBody(ASTAnd.java:61)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:470)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:434)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:44)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:41)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:292)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy79.list(Unknown Source)
+	at com.gistmap.service.StoryServiceImpl.list(StoryServiceImpl.java:36)
+	at com.gistmap.service.StoryServiceImpl$$FastClassBySpringCGLIB$$be2b93db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.gistmap.service.StoryServiceImpl$$EnhancerBySpringCGLIB$$d6778894.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy80.list(Unknown Source)
+	at com.gistmap.web.UserController.index(UserController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-11 14:16:33.361 [Druid-ConnectionPool-Log-1036826050] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1036826050","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 14:15:54","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 14:15:54","connectCount":2,"closeCount":2,"executeCount":2,"pstmtCacheHitCount":1,"pstmtCacheMissCount":1,"connectionHoldTimeHistogram":[0,2],"clobOpenCount":2,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.flag = ?","executeCount":1,"executeMillisMax":0,"executeMillisTotal":0,"executeHistogram":[1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":2,"fetchRowHistogram":[0,1],"clobOpenCount":2},{"sql":"SELECT\n          *\n        FROM\n          user\n        WHERE\n          email = ?\n        OR\n          username = ?","executeCount":1,"executeMillisMax":0,"executeMillisTotal":0,"executeHistogram":[1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1]}]}
+2018-01-11 14:17:53.769 [http-nio-7001-exec-9] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'uid' in 'class java.lang.Long'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'uid' in 'class java.lang.Long'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:94)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:108)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2671)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTAnd.getValueBody(ASTAnd.java:61)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:470)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:434)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:44)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:41)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:292)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy79.list(Unknown Source)
+	at com.gistmap.service.StoryServiceImpl.list(StoryServiceImpl.java:36)
+	at com.gistmap.service.StoryServiceImpl$$FastClassBySpringCGLIB$$be2b93db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.gistmap.service.StoryServiceImpl$$EnhancerBySpringCGLIB$$d6778894.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy80.list(Unknown Source)
+	at com.gistmap.web.UserController.index(UserController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-11 14:20:41.851 [restartedMain] INFO  com.gistmap.EnjoyApplication - Starting EnjoyApplication on DESKTOP-9DR37MS with PID 15540 (C:\gistmap\enjoy\enjoy\target\classes started by 45286 in C:\gistmap\enjoy\enjoy)
+2018-01-11 14:20:41.854 [restartedMain] INFO  com.gistmap.EnjoyApplication - No active profile set, falling back to default profiles: default
+2018-01-11 14:20:42.020 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36370c6e: startup date [Thu Jan 11 14:20:42 CST 2018]; root of context hierarchy
+2018-01-11 14:20:42.353 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-11 14:20:44.348 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 14:20:45.171 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7001 (http)
+2018-01-11 14:20:45.186 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-11 14:20:45.187 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-01-11 14:20:45.329 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-01-11 14:20:45.330 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3310 ms
+2018-01-11 14:20:45.586 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 14:20:45.588 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-01-11 14:20:45.591 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 14:20:45.592 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 14:20:45.592 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 14:20:45.593 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 14:20:45.593 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-01-11 14:20:47.549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36370c6e: startup date [Thu Jan 11 14:20:42 CST 2018]; root of context hierarchy
+2018-01-11 14:20:47.652 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/write],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.write()
+2018-01-11 14:20:47.654 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.login()
+2018-01-11 14:20:47.656 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regist],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.regist()
+2018-01-11 14:20:47.659 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.gistmap.web.IndexController.home(org.springframework.ui.Model)
+2018-01-11 14:20:47.661 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signUp],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signUp(com.gistmap.entity.User)
+2018-01-11 14:20:47.662 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signIn],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.LoginController.signIn(com.gistmap.entity.User,javax.servlet.http.HttpServletResponse)
+2018-01-11 14:20:47.663 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/music/list],methods=[GET]}" onto public java.util.List<com.gistmap.entity.MusicVO> com.gistmap.web.MusicController.list(java.lang.String)
+2018-01-11 14:20:47.664 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/{storyId}],methods=[GET]}" onto public java.lang.String com.gistmap.web.StoryController.get(java.lang.Long,org.springframework.ui.Model)
+2018-01-11 14:20:47.665 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/story/add],methods=[POST]}" onto public com.gistmap.comm.Response com.gistmap.web.StoryController.save(com.gistmap.entity.StoryDto)
+2018-01-11 14:20:47.666 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/],methods=[GET]}" onto public java.lang.String com.gistmap.web.UserController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-11 14:20:47.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 14:20:47.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 14:20:47.739 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 14:20:47.740 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 14:20:47.817 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 14:20:48.288 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-11 14:20:48.585 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-01-11 14:20:48.853 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-11 14:20:48.856 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-01-11 14:20:48.856 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-11 14:20:48.864 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-01-11 14:20:48.867 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-01-11 14:20:48.883 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7001"]
+2018-01-11 14:20:48.897 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7001"]
+2018-01-11 14:20:48.912 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-11 14:20:48.932 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7001 (http)
+2018-01-11 14:20:48.937 [restartedMain] INFO  com.gistmap.EnjoyApplication - Started EnjoyApplication in 8.066 seconds (JVM running for 9.406)
+2018-01-11 14:24:02.721 [http-nio-7001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-11 14:24:02.721 [http-nio-7001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 14:24:02.750 [http-nio-7001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-01-11 14:24:14.198 [http-nio-7001-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-11 14:24:14.202 [Druid-ConnectionPool-Log-1702474059] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1702474059","activeCount":0,"poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 14:24:14","connectCount":0,"closeCount":0,"physicalConnectCount":10}
+2018-01-11 14:29:14.205 [Druid-ConnectionPool-Log-1702474059] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1702474059","activeCount":0,"activePeak":1,"activePeakTime":"2018-01-11 14:24:14","poolingCount":10,"poolingPeak":10,"poolingPeakTime":"2018-01-11 14:24:14","connectCount":4,"closeCount":4,"executeCount":4,"pstmtCacheHitCount":1,"pstmtCacheMissCount":3,"connectionHoldTimeHistogram":[0,3,0,1],"clobOpenCount":6,"sqlList":[{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.flag = ?","executeCount":2,"executeMillisMax":1,"executeMillisTotal":2,"executeHistogram":[0,2],"executeAndResultHoldHistogram":[2],"concurrentMax":1,"fetchRowCount":2,"fetchRowHistogram":[0,2],"clobOpenCount":4},{"sql":"SELECT\n          *\n        FROM\n          user\n        WHERE\n          email = ?\n        OR\n          username = ?","executeCount":1,"executeMillisMax":0,"executeMillisTotal":0,"executeHistogram":[1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":1,"fetchRowHistogram":[0,1]},{"sql":"SELECT story.id, story.title, user.name AS author, music.name, story.content\n\t, story.brief, story.create_time\nFROM story\n\tINNER JOIN user ON story.uid = user.id\n\tINNER JOIN music ON story.tag_id = music.id\nWHERE story.flag = ?\n\tAND user.id = ?","executeCount":1,"executeMillisMax":0,"executeMillisTotal":0,"executeHistogram":[1],"executeAndResultHoldHistogram":[1],"concurrentMax":1,"fetchRowCount":2,"fetchRowHistogram":[0,1],"clobOpenCount":2}]}
+2018-01-11 14:34:14.206 [Druid-ConnectionPool-Log-1702474059] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1702474059","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}
+2018-01-11 14:39:14.207 [Druid-ConnectionPool-Log-1702474059] INFO  c.alibaba.druid.pool.DruidDataSourceStatLoggerImpl - {"url":"jdbc:mysql://localhost:3306/enjoy_sys?useUnicode=true&characterEncoding=UTF-8&useSSL=false","dbType":"mysql","name":"DataSource-1702474059","activeCount":0,"poolingCount":10,"connectCount":0,"closeCount":0}

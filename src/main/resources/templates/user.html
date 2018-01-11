@@ -37,26 +37,36 @@
                         </ul>
                     </div>
                 </div>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        我的动态
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        我的文章
+                        <span class="badge badge-primary badge-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        与我相关
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                </ul>
             </div>
             <div class="col-md-8">
+                <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    你有<strong>5条</strong> 新消息， <a href="#" class="alert-link">点击查看</a>.
+                </div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">
-                        <h4 class="list-group-item-heading">
-                            商务网站包
-                        </h4>
+                    <#list stories as story>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">${story.title}</h5>
+                            <small class="text-muted">${story.dateStr}</small>
+                        </div>
+                        <p class="mb-1">${story.brief}</p>
                     </a>
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">
-                            免费域名注册
-                        </h4>
-                        <p class="list-group-item-text">
-                            您将通过网页进行免费域名注册。
-                        </p>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">24*7 支持</h4>
-                        <p class="list-group-item-text">我们提供 24*7 支持。</p>
-                    </a>
+                    </#list>
                 </div>
             </div>
         </div>

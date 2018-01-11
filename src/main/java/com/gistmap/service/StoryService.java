@@ -4,6 +4,8 @@ import com.gistmap.entity.Story;
 import com.gistmap.entity.StoryDto;
 import com.gistmap.entity.StoryVO;
 
+import java.util.List;
+
 /**
  * @desc :
  * @author : gistmap
@@ -23,4 +25,11 @@ public interface StoryService {
 	 * @return
 	 */
 	StoryVO get(Long id);
+
+	/**
+	 * 查询所有故事
+	 * @return
+	 */
+	List<StoryVO> list(Long uid);
+
 }

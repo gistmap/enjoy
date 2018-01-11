@@ -2,6 +2,7 @@ package com.gistmap.entity;
 
 import com.gistmap.annotation.Field;
 import com.gistmap.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
  * @author : gistmap
  * @date : 2017/9/27  22:45
  */
+@Data
 @TableName(value = "music",  desc = "音乐标签表")
 public class Music extends Entity implements Serializable{
 	private static final long serialVersionUID = 7719228421237372788L;
@@ -26,44 +28,4 @@ public class Music extends Entity implements Serializable{
 	@Field(value="createTime", desc="创建时间")
 	private LocalDateTime createTime;
 
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public Long getUid() {
-		return uid;
-	}
-
-	public void setUid(Long uid) {
-		this.uid = uid;
-	}
-
-	public LocalDateTime getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(LocalDateTime createTime) {
-		this.createTime = createTime;
-	}
 }

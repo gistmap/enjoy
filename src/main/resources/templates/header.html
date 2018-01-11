@@ -25,18 +25,21 @@
                 </ul>
 
                 <ul class="nav navbar-nav ml-auto">
-
+                    <#if enjoy_user??>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
                                 <img src="${basePath}/img/ic_account_circle_white_24px.svg">
-                                <span style="font-size:18px">gistmap</span>
+                                <span style="font-size:18px">${enjoy_user.username}</span>
                             </a>
                             <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
                                 <a class="dropdown-item" href="/user/">我的主页</a>
-                                <a class="dropdown-item" href="/write">写文章</a>
+                                <a class="dropdown-item" href="/write/">写文章</a>
                                 <a class="dropdown-item" href="/setting/">设置</a>
                             </div>
                         </li>
+                    <#else>
+                        <a href="${basePath}/login">请登录</a>
+                    </#if>
                 </ul>
 
             </div>

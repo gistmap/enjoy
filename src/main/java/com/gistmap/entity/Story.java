@@ -2,6 +2,7 @@ package com.gistmap.entity;
 
 import com.gistmap.annotation.Field;
 import com.gistmap.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
  * @author : gistmap
  * @date : 2017/9/28  23:15
  */
+@Data
 @TableName(value = "story",  desc = "故事表")
 public class Story extends Entity implements Serializable {
 	private static final long serialVersionUID = -6705885177482880694L;
@@ -33,76 +35,4 @@ public class Story extends Entity implements Serializable {
 	private LocalDateTime modifyTime;
 	@Field(value="flag", desc="标记删除（默认为1,删除为0")
 	private short flag;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public Long getUid() {
-		return uid;
-	}
-
-	public void setUid(Long uid) {
-		this.uid = uid;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public Long getTagId() {
-		return tagId;
-	}
-
-	public void setTagId(Long tagId) {
-		this.tagId = tagId;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public String getBrief() {
-		return brief;
-	}
-
-	public void setBrief(String brief) {
-		this.brief = brief;
-	}
-
-	public LocalDateTime getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(LocalDateTime createTime) {
-		this.createTime = createTime;
-	}
-
-	public LocalDateTime getModifyTime() {
-		return modifyTime;
-	}
-
-	public void setModifyTime(LocalDateTime modifyTime) {
-		this.modifyTime = modifyTime;
-	}
-
-	public short getFlag() {
-		return flag;
-	}
-
-	public void setFlag(short flag) {
-		this.flag = flag;
-	}
 }

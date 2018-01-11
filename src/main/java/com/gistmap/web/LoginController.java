@@ -39,6 +39,7 @@ public class LoginController extends BaseController {
 		if (null != nameUser) {
 			return result(ExceptionMsg.UserNameUsed);
 		}
+		user.setName(user.getUsername());
 		user.setPassword(getPwd(user.getPassword()));
 		user.setCreateTime(LocalDateTime.now());
 		user.setModifyTime(LocalDateTime.now());

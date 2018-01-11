@@ -4,6 +4,9 @@ import com.gistmap.entity.Story;
 import com.gistmap.entity.StoryDto;
 import com.gistmap.entity.StoryVO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @desc :
@@ -17,4 +20,6 @@ public interface StoryDao {
     Long save(Story story);
 
 	StoryVO get(Long id);
+
+    List<StoryVO> list(@Param("uid")Long uid);
 }

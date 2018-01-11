@@ -2,6 +2,7 @@ package com.gistmap.entity;
 
 import com.gistmap.annotation.Field;
 import com.gistmap.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ import java.util.Date;
  * @author : gistmap
  * @date : 2017/9/6  22:18
  */
+@Data
 @TableName(value = "user",  desc = "用户表")
 public class User extends Entity implements Serializable
 {
@@ -43,78 +45,5 @@ public class User extends Entity implements Serializable
 
     @Field(value="modifyTime", desc="修改时间")
     private LocalDateTime modifyTime;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public byte getFlag() {
-        return flag;
-    }
-
-    public void setFlag(byte flag) {
-        this.flag = flag;
-    }
-
-    public LocalDateTime getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(LocalDateTime createTime) {
-        this.createTime = createTime;
-    }
-
-    public LocalDateTime getModifyTime() {
-        return modifyTime;
-    }
-
-    public void setModifyTime(LocalDateTime modifyTime) {
-        this.modifyTime = modifyTime;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
 
 }

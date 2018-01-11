@@ -2,6 +2,7 @@ package com.gistmap.entity;
 
 import com.gistmap.annotation.Field;
 import com.gistmap.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
  * @author : gistmap
  * @date : 2017/9/28  22:42
  */
+@Data
 @TableName(value = "friend",  desc = "用户关系表")
 public class Friend extends Entity implements Serializable{
 
@@ -29,51 +31,4 @@ public class Friend extends Entity implements Serializable{
 	@Field(value="flag", desc="标记删除（默认为1,删除为0")
 	private short flag;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public Long getBid() {
-		return bid;
-	}
-
-	public void setBid(Long bid) {
-		this.bid = bid;
-	}
-
-	public Long getFid() {
-		return fid;
-	}
-
-	public void setFid(Long fid) {
-		this.fid = fid;
-	}
-
-	public LocalDateTime getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(LocalDateTime createTime) {
-		this.createTime = createTime;
-	}
-
-	public LocalDateTime getModifyTime() {
-		return modifyTime;
-	}
-
-	public void setModifyTime(LocalDateTime modifyTime) {
-		this.modifyTime = modifyTime;
-	}
-
-	public short getFlag() {
-		return flag;
-	}
-
-	public void setFlag(short flag) {
-		this.flag = flag;
-	}
 }
